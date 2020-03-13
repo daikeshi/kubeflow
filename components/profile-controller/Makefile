@@ -1,4 +1,4 @@
-PROJECT ?= kubeflow-dev
+PROJECT ?= kubeflow-platform
 # Image URL to use all building/pushing image targets
 IMG ?= gcr.io/$(PROJECT)/profile-controller
 TAG ?= $(eval TAG := $(shell date +v%Y%m%d)-$(shell git describe --tags --always --dirty)-$(shell git diff | shasum -a256 | cut -c -6))$(TAG)
